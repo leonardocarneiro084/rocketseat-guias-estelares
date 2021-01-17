@@ -1,0 +1,54 @@
+
+<!--
+    como podemos representar código em uma página HTML?
+    se escrevermos só o código, o navegador irá interpretar
+
+    neste caso, queremos exibir o código
+
+    use a tag <code> para representar partes pequenas de código
+
+    use a tag <pre> quando quiser exibir trechos grandes de código, blocos de código
+    
+    essa tag mantém espaços em brancos e recuos
+    
+    não funciona para código HTML
+    no caso de HTML, você terá que usar os caracteres especiais
+    &lt; &gt&
+    não tem como fugir disso
+
+    o <code> e <pre> funcionam para código javascript
+
+
+
+-->
+
+<!-- note que não funciona para HTML-->
+
+<pre>
+<code>
+    <h1>Título</h1>
+    <h2>subtítulo</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error minima unde eos iusto sequi exercitationem dolore libero excepturi, quae optio vel dolorem recusandae velit praesentium mollitia? Illum doloribus consectetur explicabo!</p>
+</code>
+</pre>
+
+<pre><code>
+    &lt;h1&gt;Título&lt;/h1&gt;
+    &lt;h1&gt;subtítulo&lt;/h2&gt;
+    &lt;p&gt;parágrafo&lt;/p&gt;
+</code></pre>
+
+<br>
+<br>
+<br>
+<br>
+<!-- agora vamos tentar com um código javascript-->
+
+<code>          document.querySelector("body")</code>
+
+<!--note que a tag <code> não preserva os espaços em branco-->
+
+<pre>           document.querySelector("body")</pre>
+
+<pre><code>           document.querySelector("body")</code></pre>
+
