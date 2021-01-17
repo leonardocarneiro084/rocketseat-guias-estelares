@@ -1,0 +1,71 @@
+<!-- atributos globais são aplicados a todas as tags
+
+    atributos globais mais utilizados
+
+    - class
+    - contenteditable
+    - data-*
+    - hidden
+    - id
+    - style
+    - tabindex
+    - title
+
+
+-->
+
+<div class="carrinho" contenteditable="true" id="carrinho01" style="color: red;" tabindex="1" title="carrinho 01">
+    carrinho 01
+    <!-- você pode inserir mais elementos aqui dentro da div
+    note o atributo "contenteditable"
+    permite editar o conteúdo da div
+    note que as outras divs não podem ser editadas pois não receberão o atributo "contenteditable"
+    -->
+</div>
+
+<div class="carrinho" data-id="" id="carrinho02" style="color: blue;" tabindex="2" title="carrinho 02">
+    carrinho 02
+    <!-- você pode inserir mais elementos aqui dentro da div 
+    note que após o atributo "data" é possível escrever qualquer coisa
+    exemplo
+    data-id=""
+    data-nome=""
+    data-qualquercoisa=""
+    -->
+</div>
+
+<div class="carrinho" hidden id="carrinho03" style="color: yellow;" tabindex="3">
+    carrinho 03
+    <!-- você pode inserir mais elementos aqui dentro da div 
+        atributo hidden esconde a tag
+    
+    -->
+</div>
+
+<!-- podemos ter várias "class" com o mesmo nome 
+    já o atributo "id" não podemos ter nomes repetidos
+    pois irá gerar conflitos no CSS e javascript
+
+    o "class" é utilizado para aplicar estilo CSS e acessar no javascript
+
+    no css, quando chamamos a classe "carrinho",
+    todas as divs com classe "carrinho" receberão os mesmos atributos
+
+    podemos também usar o atributo "style"
+    porém, não é mais considerado uma boa prática
+    utilizar o atributo "style" dentro do html
+    todo o style da página será feito em um arquivo CSS separado
+
+    o atributo "tabindex" é utilizado
+    para navegar na página com a tecla TAB
+    é um atributo que contribui com a acessibilidade do site
+    facilita a navegação sem o mouse
+
+    atributo "título" irá mostrar uma caixinha flutuante
+    quando passar o mouse por cima do conteúdo
+
+-->
+
+
+
+
