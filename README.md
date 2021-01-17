@@ -1,2 +1,3 @@
 # rocketseat-guias-estelares
-todas as atividades do Guia Estelar da Rocketseat
+
+olá! sou iniciante e estou fazendo todas as atividades do Guia Estelar da Rocketseat
