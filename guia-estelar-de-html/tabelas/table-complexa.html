@@ -1,0 +1,69 @@
+<!--
+    2 lojas
+    - quantos produtos foram produzidos
+    - quantos foram vendidos
+    - agrupar por nome dos produtos
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela complexa</title>
+</head>
+<body>
+
+    <table>
+
+        <caption>Título da tabela</caption>
+
+        <colgroup>                                                  <!-- agrupamento de colunas para estilizar a tabela -->
+            <col>                                                   <!-- a primeira coluna não vamos estilizar -->
+            <col span="2" style="background-color: green;">       <!-- note que aqui não temos o colspan, temos somente o 'span', pois a tag já se chama 'col'-->
+            <col span="2" style="background-color: purple;">      <!-- note que aqui não temos o colspan, temos somente o 'span', pois a tag já se chama 'col'-->
+        </colgroup>                                                 <!-- no futro, toda a estilização será feita no CSS -->
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th>                               <!-- rowspan faz a célula ocupar 2 linhas, expande para baixo -->
+                <th colspan="2" scope="colgroup">Loja 1</th>        <!-- colspan faz a célula ocupar 2 colunas, expande para a direita. com o atributo scope, estou falando que o escopo desse cabeçalho é um escopo de grupo de colunas (colgroup) -->
+                <th colspan="2" scope="colgroup">Loja 2</th>        <!-- colspan faz a célula ocipar 2 colunas, expande para a direita. scope é um atributo de acessibilidade -->
+                
+            </tr>
+
+            <tr>
+                <th scope="col">Produzido</th>                      <!-- note que a tag th deixa o texto em negrito -->
+                <th scope="col">Vendido</th>                        <!-- com o atributo scope, estou falando que o escopo desse cabeçalho é um escopo de linha -->
+                <th scope="col">Produzido</th>
+                <th scope="col">Vendido</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row">Produto 01</th>                     <!-- usando a tag th para que o nome do produto fique em negrito-->
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Produto 02</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
+
+
+
+
