@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cascata.css"> <!-- tag link. 3º lugar na cascata -->
+    <title>Cascata</title>
+</head>
+<body>
+
+    <style>
+  
+        h1 {
+          color: gray;
+        }
+
+        p {
+            color: yellow;
+        }
+    </style>
+      
+        <!-- 
+        esta é a tag <style>. 
+        fica 2º lugar na ordem de prioridade, depois da tag inline
+        -->
+      
+      
+      <h1 class="title" id="my-title" style="color: green">Título <b>da página</b> </h1>
+      
+        <!-- 
+        este é o estilo "inline". 
+        é o estilo adicionado dentro de cada tag HTML. 
+        fica em 1º lugar na ordem de prioridade.
+        é o item mais forte da cascata. tem valor de especificidade 1000.
+        -->
+      
+      <p style="color: red;">Subtítulo</p>
+
+</body>
+</html>

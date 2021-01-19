@@ -1,0 +1,58 @@
+
+
+/* 
+
+<link rel="stylesheet" href="style.css">
+
+a tag <link> fica no cabeçalho <head> do arquivo HTML, e aponta para um arquivo CSS externo. indicando que todo o estilo será feito em um arquivo CSS externo.
+
+logo, o arquivo CSS externo fica em 3º na cascata.
+
+*/
+
+* {
+    color: green;
+
+    /* seletor universal
+    0. de especificidade
+    */
+}
+
+
+h1 {
+    color: red;
+
+    /* element type selector
+    1. de especificidade
+    */
+
+
+  }
+  
+  body h1 { /* dentro da tag <body> vou procurar a tag <h1> */
+    font-size: 40px;
+    color: blue;
+  }
+  
+  p {
+    color: violet;
+  }
+
+
+.title {
+    color: white;
+
+    /* class, attribute selector
+    10. de especificidade
+    */
+}
+
+#my-title, #my-title b { /* note que agora separado por vírgula, estamos aplicando o estilo à 'my-title' e à tag <b> dentro da id 'my-title' */
+    color: purple !important; 
+
+    /* id
+    100. de especificidade
+    */
+
+}
+

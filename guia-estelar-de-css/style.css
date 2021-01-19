@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@300;500&display=swap');
+
+/* importando uma fonte do google */
+
+
+* {
+    background: black;
+    margin: 0;
+    font-family: 'Imbue', serif; /* após importar a fonte, é preciso definir o estilo */
+        
+}
+
+h1 {
+    color: white;
+    margin: 20px;
+
+}
+
+h2 {
+    color: red;
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid white;
+    width: 200px;
+    text-align: center;
+}
+
+
